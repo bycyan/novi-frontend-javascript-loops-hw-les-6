@@ -7,6 +7,15 @@
 // ****
 // *****
 
+
+for (let i = "*"; i < "*****"; i++) {
+    console.log(i)
+    console.log(i.repeat(2))
+    console.log(i.repeat(3))
+    console.log(i.repeat(4))
+    console.log(i.repeat(5));
+}
+
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen...
 // Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
@@ -25,8 +34,12 @@
 // klaar!
 // ==========================================
 
-
-
+for(let l = 0; l < 5; l++){
+    if (l < 4) {
+        console.log("loop..");
+    }
+    else {console.log("Klaar!")}
+}
 
 
 // ==========================================
@@ -43,6 +56,13 @@
 // >> 7
 // >> 8
 // >> 9
+
+for (let c = 0; c < 10; c++){
+    if (c < 3 ){console.log(c)}
+    else if (c < 6){console.log(">" + c)}
+    else {console.log(">>" + c)}
+}
+
 // ==========================================
 
 
@@ -86,6 +106,22 @@
 // FizzBuzz
 // etc.
 // ==========================================
+
+// for (let h = 0; h < 11; h++){
+//     if (h % 3 && h % 5){
+//         console.log(h)
+//     } else{
+//         if (h  **= 5 ){
+//             console.log("Fizz")
+//         } else {
+//             console.log("Buzz")
+//         }
+//     }
+
+    // else if(h/3) {console.log("Fizz")}
+    // else if (h === 5){console.log("Buzz")}
+    // else{console.log("Buzz")}
+// }
 
 
 
