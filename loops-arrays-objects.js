@@ -9,11 +9,30 @@ const scores = [
     {name: 'Rianne', score: 66, grade: null}
 ];
 
+for (let i = 0; i < scores.length; i++){
+    if (scores[i].score < 60){
+        scores.grade = "E"
+    }
+    else if (scores[i].score < 70){
+        (scores[i].grade = "D")
+    }
+    else if (scores[i].score < 80){
+        scores[i].grade = "C"
+    }
+    else if (scores[i].score < 90){
+        scores[i].grade = "B"
+    }
+    else if (scores[i].score < 100){
+        scores[i].grade = "A"
+    }
+    console.log("name: "+scores[i].name+" score: "+scores[i].score+" grade: "+scores[i].grade);
+}
+
 // Verwachtte uitkomsten:
 // 83
 // 77
 // 92
-// 66ç
+// 66
 // ==========================================
 
 
@@ -64,6 +83,10 @@ const NOVIEmployees = [
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
 
+for (let i = 0; i < NOVIEmployees.length; i++){
+    console.log(NOVIEmployees[i].firstName.toLowerCase()+NOVIEmployees[i].lastName.toLowerCase()+"@novi.nl");
+}
+
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
@@ -113,6 +136,35 @@ const students = [
     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
+
+for(let i = 0; i < students.length; i++){
+    switch (students[i].zipCode){
+        case "3513":
+            students[i].neighborhood = "Pijlsweerd"
+            break;
+        case "3514": students[i].neighborhood = "Vogelenbuurt"
+            break;
+        case "3512":
+            students[i].neighborhood = "Binnenstad"
+            break;
+        case "3531":
+            students[i].neighborhood = "Lombok"
+            break;
+        case "3572":
+            students[i].neighborhood = "Wittevrouwen"
+            break;
+        case "3581":
+            students[i].neighborhood = "Oudwijk"
+            break;
+        case "3583":
+            students[i].neighborhood = "Schildersbuurt"
+            break;
+    }
+
+    console.log(students[i])
+}
+
+
 
 // Verwachte uitkomsten:
 // [
